@@ -13,10 +13,13 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.get('/realtime', function(request, response) {
+app.get('/realtimeservice', function(request, response) {
 
 
-
+	response.writeHead(200, {
+        'Content-Type': 'text/plain'
+    });
+    response.end('MINImelon Oil & Repairs API');
 
 
 

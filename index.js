@@ -19,14 +19,15 @@ app.get('/realtimeservice', function(request, response) {
 	response.writeHead(200, {
         'Content-Type': 'text/plain'
     });
-    response.end('MINImelon Oil & Repairs API');
-
-
+    response.end('MINImelon test coin platform');
 
 
 	
   // response.render('pages/index');
 });
+
+
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));

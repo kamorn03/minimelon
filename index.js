@@ -13,6 +13,12 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+
+
+app.get('/login', function(request, response) {
+	response.render('pages/login');
+});
+
 app.get('/realtimeservice', function(request, response) {
 
 
@@ -21,12 +27,12 @@ app.get('/realtimeservice', function(request, response) {
     });
     response.end('MINImelon Oil & Repairs API');
 
-
-
-
 	
   // response.render('pages/index');
 });
+
+
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
